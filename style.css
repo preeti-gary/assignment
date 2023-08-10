@@ -1,0 +1,96 @@
+
+/* CSS for the main layout using CSS Grid */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Divide the layout into three columns */
+    gap: 20px; /* Gap between columns */
+    background-color: #D071f9;
+
+}
+.heading {
+    position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw; /* Make the heading take the full viewport width */
+  text-align: center; /* Center the text within the h1 element */
+  
+}
+.heading h1 {
+    background-color: white;
+    
+}
+/* CSS for Courses Details section */
+.courses-details {
+    grid-column: 1; /* Place in the first column */
+    padding: 20px;
+    max-width: 300px;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    margin-top: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 6%;
+
+
+}
+
+/* CSS for Video Player section */
+.video-player {
+    grid-column: 2; /* Place in the second column */
+    padding: 20px;
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+/* CSS for Ask a Question section */
+.ask-question {
+    grid-column: 3; /* Place in the first column */
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    background-color:white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 30%;
+    align-items: center;
+
+}
+.ask-question .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #D071f9;
+    text-align: center;
+}
+.ask-question .form {
+    width: 100% ;
+}
+.ask-question .form .form1 {
+    margin-bottom: 15px;
+    
+}
+.ask-question .form .form1 label {
+    font-size: 20px;
+    width: 200px;
+    
+}
+.ask-question .form .form1 input,
+.ask-question .form .form1 textarea {
+    margin-top: 5px;
+    text-align: 15px;
+    outline-color: #D071f9;
+    padding: 8px 10px;
+    
+}
+.ask-question .form .form1 textarea {
+    resize: none;
+    height: 100px;
+}
+button {
+    background-color: #D071f9;
+    color: white;
+}
+
